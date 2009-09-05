@@ -21,3 +21,5 @@ if __name__ == '__main__':
         detach_open(['gajim-remote', 'open_chat', uri])
     elif u.scheme == 'git':
         detach_open(['git', 'clone', uri], cwd=os.path.expanduser('~/src'))
+    else
+        print "Unknown scheme: " + u.scheme
