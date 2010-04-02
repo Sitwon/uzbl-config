@@ -291,7 +291,7 @@ set toggle_cmd_ins = @toggle_modes command insert
 @bind   <Ctrl>i    = @toggle_cmd_ins
 
 # --- Hard-bound bookmarks ---
-@cbind  gh  = uri http://www.google.com/ncr
+@cbind  gh  = uri http://www.uzbl.org
 
 # --- Yanking & pasting binds ---
 @cbind  yu  = sh 'echo -n $6 | xclip'
@@ -341,7 +341,8 @@ set formfiller = spawn @scripts_dir/formfiller.sh
 # === Context menu items =====================================================
 
 # Default context menu
-menu_add Go Home = set uri = http://www.google.com/ncr
+menu_add Google = set uri = http://google.com
+menu_add Go Home = set uri = http://uzbl.org
 menu_separator separator_1
 menu_add Quit uzbl = exit
 
@@ -380,4 +381,4 @@ set default_mode = command
 # === Post-load misc commands  ===============================================
 
 # Set the "home" page.
-set uri = http://www.google.com/ncr
+set uri = uzbl.org/doesitwork/@COMMIT
